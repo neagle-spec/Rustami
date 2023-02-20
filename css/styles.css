@@ -1,0 +1,28 @@
+body {
+    background-color: whitesmoke;
+    text-align: center;
+}
+.btn-primary {
+    margin-top: 2em;
+    background-color: darkblue;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: lightblue !important;
+}
+h1, h4 {
+    font-weight: 600;
+    color: darkblue;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-image: url("../images/background.jpg");
+    background-color: #cccccc;
+}
