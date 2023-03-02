@@ -19,5 +19,28 @@ $f3 = Base::instance();
 //Define a default route
 $f3->route('GET /', function () {
     $view = new Template();
-    echo $view->render('views/home.html');
+    echo $view->render('views/home.php');
 });
+
+$f3->route('GET|POST /home', function () {
+    $view = new Template();
+    echo $view->render('views/home.php');
+});
+
+$f3->route('GET|POST /aboutUs', function () {
+    $view = new Template();
+    echo $view->render('views/aboutUs.html');
+});
+
+$f3->route('GET|POST /book', function () {
+    $view = new Template();
+    echo $view->render('views/book.php');
+});
+
+$f3->route('GET|POST /gallery', function () {
+    $view = new Template();
+    echo $view->render('views/gallery.php');
+});
+
+//Run fat-free
+$f3 ->run();
